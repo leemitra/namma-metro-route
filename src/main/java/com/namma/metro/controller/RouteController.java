@@ -1,5 +1,9 @@
 package com.namma.metro.controller;
 
+import java.io.FileNotFoundException;
+import java.util.List;
+
+import com.namma.metro.route.model.MetroStation;
 import com.namma.metro.route.service.RouteService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +17,7 @@ public class RouteController{
     private RouteService routeService;
 
     @GetMapping("/route")
-    public String getRoutes(){
+    public List<MetroStation> getRoutes() throws FileNotFoundException{
         return routeService.getRouteName();
     }
 }
