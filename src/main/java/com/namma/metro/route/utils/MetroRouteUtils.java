@@ -19,7 +19,7 @@ public class MetroRouteUtils {
     @PostConstruct
     public List<MetroStation> readMetroStations() throws IllegalStateException, FileNotFoundException{
         File file = ResourceUtils.getFile("classpath:stops-list-Purple-Line.csv");
-        List<MetroStation> stations= new CsvToBeanBuilder(new FileReader(file))
+        List<MetroStation> stations= new CsvToBeanBuilder<MetroStation>(new FileReader(file))
         .withType(MetroStation.class)
         .build()
         .parse();
