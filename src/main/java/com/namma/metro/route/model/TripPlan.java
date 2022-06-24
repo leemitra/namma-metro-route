@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 public class TripPlan {
     private String error;
-	private List<String> summary;
-	private List<String> step;
+    private List<String> planSummary;
+    private List<String> planStep;
 }

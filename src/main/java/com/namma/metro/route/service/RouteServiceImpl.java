@@ -4,14 +4,15 @@ import com.namma.metro.route.model.TripPlan;
 
 import org.springframework.stereotype.Service;
 
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 
 @Service
-@Log4j
+@Slf4j
 public class RouteServiceImpl implements RouteService {
 
     @Override
     public String getRouteName() {
+        log.info("Route name is ");        
         return "RouteName";
     }
     
