@@ -5,7 +5,8 @@ import lombok.Data;
 @Data
 public class MetroStation {
     
-    private String id;
-    private String stationName;
+    private String slNo;
+    private String stopName;
     private String openingDate;
+    private String stationName;
 }
