@@ -1,6 +1,8 @@
 # namma-metro-route
 
-Java spring boot rest api to suggest travel directions on Bangalore Namma metro
+Java spring boot rest api to suggest travel directions on Bangalore Namma metro, goal of creating this project is a space for people who are passionate about development.
+
+The large categories consist of Ground (Group), Community, Breakdown, and Challenge.
 
 # Pre-requisite
 Java 11
