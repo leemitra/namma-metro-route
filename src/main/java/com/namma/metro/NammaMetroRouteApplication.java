@@ -16,6 +16,7 @@ public class NammaMetroRouteApplication {
 	public static void main(String[] args) {
 		log.info("start server at");
 		SpringApplication.run(NammaMetroRouteApplication.class, args);
+
 	}
 
 }
