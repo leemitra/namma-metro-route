@@ -1,4 +1,4 @@
-package com.namma.metro.controller;
+/*package com.namma.metro.controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -54,4 +54,4 @@ public class ArticleWorkflowService {
         variables.put("approved", approval.isStatus());
         taskService.complete(approval.getId(), variables);
     }
-}
+}*/

@@ -1,4 +1,4 @@
-package com.namma.metro.flow;
+/*package com.namma.metro.flow;
 
 import org.flowable.engine.delegate.DelegateExecution;
 import org.flowable.engine.delegate.JavaDelegate;
@@ -12,3 +12,4 @@ public class PublishArticleService implements JavaDelegate {
     }
 
 }
+*/

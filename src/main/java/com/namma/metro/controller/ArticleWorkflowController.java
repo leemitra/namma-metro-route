@@ -1,4 +1,4 @@
-package com.namma.metro.controller;
+/*package com.namma.metro.controller;
 
 import java.util.List;
 
@@ -31,4 +31,4 @@ public class ArticleWorkflowController {
     public void review(@RequestBody Approval approval) {
         service.submitReview(approval);
     }
-}
+}*/
