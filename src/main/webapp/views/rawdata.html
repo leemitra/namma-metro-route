@@ -1,0 +1,2476 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Hotel</title>
+        
+        
+
+        <link rel="stylesheet" href="css/hotel.css" type="text/css"/>
+        <script src = "js/jquery-3.3.1.js"></script> 
+        
+<script>
+
+ 
+function getArray(){
+    return $.getJSON('data.json');
+}
+
+getArray().done(function(json) {
+    // now you can use json
+    console.log(json);
+    var questions = [];
+    $.each(json, function(key, val) {
+        questions[key] = { Category: val.Category };
+    });
+    console.log(questions);
+});
+</script>
+    </head>
+    <body>
+        <div class="container">
+        <p style="line-height: 100%; margin-bottom: 0cm">
+            <font size="6" style="font-size: 24pt">Welcome to Home Page</font></p>
+        <p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+        </p>
+        <p style="line-height: 100%; margin-bottom: 0cm" onclick="getArray();"><br/>
+             dsdsdsdsd
+        </p> 
+        <div class="row"><a href="#" onclick="myFunction('nonVegStar')">Non-VEG STARTERS</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('vegStar')">VEG STARTERS</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('chickenTreat')">CHICKEN TREAT</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('vegTreat')">VEG TREAT</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('eggTreat')">EGG TREAT</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('rolls')">ROLLS</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('hotfromtan')">HOT FROM THE TANDOORI</a></div>
+        <div class="row"> <a href="#" onclick="myFunction('muttonItems')">MUTTON ITEMS</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('seaFood')">SEA FOOD (seasonal)</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('rotiNaan')"> ROTI/NAAN</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('biriyani')">BIRIYANI</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('friedRice')">RICE &Fried RICE </a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('noodles')">NOODLES</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('snacks')">SNACKS</a> </div>
+        <div class="row"> <a href="#" onclick="myFunction('salad')">SALAD, RAITHAS, WATER & SOFTDRIKS</a> </div>
+         
+        <div class="row" id="nonVegStar" hidden="true">
+         <table width="387" cellpadding="2" cellspacing="0"  style="margin-left: 10mm;">
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>Non-VEG STARTERS</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" 
+                    class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Peppar Eden Special (Full)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 350</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Peppar Eden Special (Half)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 175</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken 555</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 180</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Sweet 16</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 165</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Manchurian</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 165</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chilly Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Punjabi Chicken Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Ginger Chicken Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 150</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Peppar Chicken Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 150</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Lemon Chicken Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 150</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        11</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 150</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        12</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        13</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Kabab</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 150</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        14</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Lollipop</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 160</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        15</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Chettinad</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        16</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Peppar wings</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 160</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        17</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Japanese Quil Kabab Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        18</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Japanese Quil Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 110</p>
+                </td>
+            </tr>
+         </table>
+        </div>
+            
+        <div class="row" id="vegStar" >
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+          
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>VEG STARTERS</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Gobi Manchurian</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Gobi Chilly</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Gobi Peppar Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Chilly</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Manchurian</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer 65</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Papper Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mushroom Chilly</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mushroom Manchurian</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mushroom Peppar Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 125</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        11</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Baby Corn Peppar Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 125</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        12</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Baby Corn Chilly</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        13</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Baby Corn Manchurian</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        14</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Baby Corn Golden Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        15</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Manchurian</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        ₹ 125</p>
+                </td>
+            </tr>
+             
+            </table>
+        </div>
+            
+         <div class="row" id="chickenTreat">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>CHICKEN TREAT</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Butter Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        150</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Hydrabadi Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Andra Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Kolapuri</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Spicy Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Methi Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Tikka Masala B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        160</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Kadai</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Dopyazaa</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        11</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Godavari</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        12</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Sagwala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        13</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Punjabi Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        14</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Kashmiri Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        15</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Mughlal</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        16</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chilly Chicken Gravy</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        17</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Garlic Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        18</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Ginger Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        19</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Green Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        155</p>
+                </td>
+            </tr>
+          
+            
+               </table>
+        </div>
+            
+         <div class="row" id="vegTreat">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+             
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>VEG TREAT</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Kaju Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        170</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Butter Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Green Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer sagwala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Kadai</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Kolapuri</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Kofta</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Palak Paneer</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Shahi Paneer</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Mughlal</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        11</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mix Veg Curry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        12</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Makhanwala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        13</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Sagwala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        14</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Kolapuri</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        15</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Kofta</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        16</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Bhendi Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        17</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Bhendi Dry/Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        95</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        18</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Capcicum Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        19</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Capcicum Dry/Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        20</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Stued Capcicum</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        21</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Gobi Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        22</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Gobi Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        23</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Gobi Manchurian Gravy</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        24</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Gobi chilly Gravy</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        25</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Tomato Gobi</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        26</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Tomato Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        90</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        27</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alu Gobi</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        28</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alu Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        90</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        29</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alu Dry/Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        90</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        30</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alu Jeera</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        95</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        31</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alu Green Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        32</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alu Mutter'</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        33</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alu Palak</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        34</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Plain Palak</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        35</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Baby Corn Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        36</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mushroom Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        37</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Green Peas Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        90</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        38</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Green Peas Dry/Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        90</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        39</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chana Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        40</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chana Dry/Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        41</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Malai Kofta</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        42</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Malai Mutter</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        95</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        43</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Dal FRy</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        95</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        44</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Dal Makhani</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        45</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Dal Tadka</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+              </table>
+        </div>
+            
+         <div class="row"id="eggTreat">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>EGG TREAT</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        80</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Mughlai</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        85</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Mukhanwala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        85</p>
+                </td>
+            </tr>
+           
+               </table>
+        </div>
+            
+         <div class="row" id="rolls">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+             
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>ROLLS</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Spring Roll</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        140</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Spring Roll</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Spring Roll</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Spring Roll</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+          
+          </table>
+        </div>
+            
+         <div class="row" id="hotfromtan">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+             
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>HOT FROM THE TANDOORI</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Barbique Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        380</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alfaham Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        370</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Grill Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        360</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Tandoor Chicken(Full)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        350</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Tandoor Chicken(Half)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        175</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Tandoor Kabab</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        165</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Haryali Kabab B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        165</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Malai Kabab B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        165</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Tikka</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        165</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Achari Tikka</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        170</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        11</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Tangadi Kabab</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        165</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        12</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Tangadi Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        170</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        13</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Pahadi Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        250</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        14</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Afgani Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        360</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        15</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Lahori Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        250</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        16</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Kalmi Kabab (2Pcs)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        17</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Banjara Chicken</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        170</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        18</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Kalimirch Chicken B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        170</p>
+                </td>
+            </tr>
+              </table>
+        </div>
+            
+         <div class="row" id="muttonItems">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>MUTTON ITEMS</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Peppar Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        200</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        200</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Masala</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        200</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Rara Gosh</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        220</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Kheema</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        220</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Do-pyaaza</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        200</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Phaal</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        260</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Shami</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        250</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Sheek</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        250</p>
+                </td>
+            </tr>
+             </table>
+        </div>
+            
+        <div class="row" id="seaFood" >
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>SEA FOOD (seasonal)</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Prwans Peppar Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        190</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Prwans Manchurian</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        190</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Prwans Chilly</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        190</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Prawns 65</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        190</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Fish Tikka B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        180</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Fish Chilly B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        170</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Fish Kaba B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        170</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Fish Masala B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        170</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Fish Fry (Seer/Bangad)</p>
+                </td>
+                <td width="57" class="tabData2"></td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Fish Curry (seer/Bangada)</p>
+                </td>
+                <td width="57" class="tabData2"></td>
+            </tr>
+              </table>
+        </div>
+            
+         <div class="row" id="rotiNaan">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>ROTI/NAAN</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Roti</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        18</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Butter Roti</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        22</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Plain Naan</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        22</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Butter Naan</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        26</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Kulcha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        18</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Butter Kulcha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        23</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Plain Parotha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        25</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Stued Parotha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        40</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Onion Parotha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        40</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Alu Parotha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        40</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        11</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Kerla Parotha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        20</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        12</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chapati</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        13</p>
+                </td>
+            </tr>
+         
+               </table>
+        </div>
+            
+         <div class="row" id="biriyani">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>BIRIYANI</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mutton Biriyani</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        190</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Biriyani B/L</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        160</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Biriyani</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        150</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Fish Biriyani</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        190</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Prwans Biriyani</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        190</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Biriyani</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Biriyani</p>
+                </td>
+                <td width="57" class="tabData2"></td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Biriyani</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mushroom Biriyani</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130</p>
+                </td>
+            </tr>
+               </table>
+        </div>
+            
+         <div class="row" id="friedRice">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <b>RICE &amp;Fried RICE </b>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Biriyani Rice</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        95</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Ghee Rice</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        95</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Jira Rice</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        90</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Curd Rice</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        70</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Kashmiri palav 
+                    </p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Plain Rice (Without Gravy)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        30</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Plain Rice Half)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        15</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Fried Rice/Schezwan</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        150/155</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Fried Rice/Schezwan</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100/110</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Fried Rice/Schezwan</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        110/120</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        11</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mashroom Fried Rice</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        125</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        12</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Fried Rice</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130</p>
+                </td>
+            </tr>
+             </table>
+        </div>
+            
+         <div class="row" id="noodles">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <b>NOODLES</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Chicken Noodles/Schezwan</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        160/170</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Noodles/Schezwan</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        130/140</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg NOodles/Schezwan</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        120/130</p>
+                </td>
+            </tr>
+              </table>
+        </div>
+            
+         <div class="row" id="snacks">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <b>SNACKS</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Masala Papad</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        30</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Papad Fry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        20</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Papad Dry</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        20</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Boiled Egg(2nos)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        30</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Onion Pakoda</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        85</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        6</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Veg Pakoda</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        85</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        7</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Capcicum Pakoda</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        85</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        8</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Chilly</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        90</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        9</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Burji</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        70</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        10</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Egg Pakoda</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        80</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        11</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Paneer Pakoda</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        100</p>
+                </td>
+            </tr>
+              </table>
+        </div>
+            
+         <div class="row" id="salad">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>SALAD</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Green Salad</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        50</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Cucumber Salad</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        40</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Tomato Salad</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        40</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        4</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Carrot Salad</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        50</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        5</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Onion Salad</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        35</p>
+                </td>
+            </tr>
+              </table>
+        </div>
+            
+         <div class="row">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>RAITHAS</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Mixed Raitha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        70</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Cucumber Raitha</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        60</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Plain Curd</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        25</p>
+                </td>
+            </tr>
+              </table>
+        </div>
+            
+         <div class="row">
+            
+         <table width="387" cellpadding="2" cellspacing="0" style="margin-left: 10mm;">
+         
+         
+            <tr>
+                <td colspan="3" width="381" class="tabData1"><p align="center">
+                        <font size="2" style="font-size: 11pt"><b>WATER &amp; SOFTDRIKS</b></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        1</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Water Bottle (1Ltr)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        22</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        2</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Soft Drink (250 ml)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        22</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="96" class="tabData1"><p align="center">
+                        3</p>
+                </td>
+                <td width="220" class="tabData2"><p>
+                        Soft Drink (250 ml)</p>
+                </td>
+                <td width="57" class="tabData2"><p align="center">
+                        45</p>
+                </td>
+            </tr>
+         
+        </table>
+         </div>
+        
+        <p style="line-height: 100%; margin-bottom: 0cm"><br/>
+            Shailaja
+        </p>
+        
+        </div>
+    </body>
+</html>

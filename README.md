@@ -1,6 +1,8 @@
-#namma-metro-route
+# namma-metro-route
 
-Java spring boot based web api to suggest travel directions on Bangalore Namma metro
+Java spring boot rest api to suggest travel directions on Bangalore Namma metro, goal of creating this project is a space for people who are passionate about development.
+
+The large categories consist of Ground (Group), Community, Breakdown, and Challenge.
 
 # Pre-requisite
 Java 11
@@ -19,4 +21,10 @@ Java 11
 ## Run the jar file
 - Download `namma-metro-route-0.0.1-SNAPSHOT.jar` from executable directory.
 - Run jar file `java -jar namma-metro-route-0.0.1-SNAPSHOT.jar`
-- System logs can be found at `logs/logs/metro_log.log` in installation directory
+- System logs can be found at `logs/metro_log.log` in installation directory
+
+## Build from source code
+- Clone the git repo.
+- Using IDE import as maven project
+- Locate `com.namma.metro.NammaMetroRouteApplication.java` 
+- Right click and run as `Spring Boot App`
