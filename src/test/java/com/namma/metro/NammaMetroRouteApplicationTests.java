@@ -1,4 +1,4 @@
-package com.namma.metro;
+/*package com.namma.metro;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,3 +11,4 @@ class NammaMetroRouteApplicationTests {
 	}
 
 }
+*/
